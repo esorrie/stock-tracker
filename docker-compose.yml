@@ -1,0 +1,36 @@
+networks:
+  stock-tracker-dev:
+    driver: bridge
+
+services:
+  stock-tracker:
+    image: stocker-tracker:latest
+    depends_on:
+      - postgres_db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    environment:
+      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DB_CONNECTION_STRING=Host=postgres_db;Port=5432;Database=stockDB;Username=root;Password=root
+    networks:
+      - stock-tracker-dev
+
+  postgres_db:
+      image: postgres:latest
+      environment:
+        POSTGRES_DB: stockDB
+        POSTGRES_USER: root
+        POSTGRES_PASSWORD: root
+      ports:
+        - "5432:5432"
+      volumes:
+        - postgres_data:/var/lib/postgresql/data
+      networks:
+        - stock-tracker-dev
+
+volumes:
+  postgres_data:
