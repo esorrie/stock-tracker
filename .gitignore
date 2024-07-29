@@ -1,4 +1,7 @@
-/.vscode
+.vscode
 /bin
-/obj
-/Properties
+obj
+Properties
+obj/Debug/net8.0/project.razor.vscode.bin
+obj/Debug/net8.0/stock-tracker.AssemblyInfo.cs
+obj/Debug/net8.0/stock-tracker.AssemblyInfoInputs.cache
