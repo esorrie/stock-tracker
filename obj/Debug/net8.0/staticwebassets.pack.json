@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/edwardsorrie/Documents/stock-tracker/obj/Debug/net8.0/scopedcss/projectbundle/stock-tracker.bundle.scp.css",
+      "PackagePath": "staticwebassets/stock-tracker.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/edwardsorrie/Documents/stock-tracker/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/edwardsorrie/Documents/stock-tracker/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/edwardsorrie/Documents/stock-tracker/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/edwardsorrie/Documents/stock-tracker/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.stock-tracker.props",
+      "PackagePath": "build\\stock-tracker.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.stock-tracker.props",
+      "PackagePath": "buildMultiTargeting\\stock-tracker.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.stock-tracker.props",
+      "PackagePath": "buildTransitive\\stock-tracker.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.stock-tracker.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
