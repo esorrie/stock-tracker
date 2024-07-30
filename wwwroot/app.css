@@ -553,3 +553,7 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
