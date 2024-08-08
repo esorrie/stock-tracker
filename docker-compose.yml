@@ -1,6 +1,6 @@
 services:
 
-  blazorapp:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
@@ -8,7 +8,7 @@ services:
       - "8080:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Host=db;Database=stocktrackerDB;Username=root;Password=root
+      - ConnectionStrings__DefaultConnection=Host=postgres_db;Database=stocktrackerDB;Username=root;Password=root
     volumes:
       - .:/app
       - /app/obj
